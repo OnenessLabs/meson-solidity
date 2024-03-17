@@ -14,6 +14,7 @@
     "build:packages": "yarn workspace @mesonfi/sdk build && yarn workspace @mesonfi/presets build",
     "estimate": "hardhat estimate --upgradable true",
     "docgen": "solidity-docgen --solc-module solc -t ./templates",
+    "testnet:one": "hardhat deploy --testnet one --upgradable true",
     "testnet:goerli": "hardhat deploy --testnet goerli --upgradable true",
     "testnet:sepolia": "hardhat deploy --testnet sepolia --upgradable true",
     "testnet:bnb": "hardhat deploy --testnet bnb --upgradable true",
@@ -80,6 +81,7 @@
   "devDependencies": {
     "@matterlabs/hardhat-zksync-deploy": "^0.6.2",
     "@matterlabs/hardhat-zksync-solc": "^0.3.14",
+    "@nomicfoundation/hardhat-verify": "^2.0.4",
     "@nomiclabs/hardhat-ethers": "^2.1.0",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "@openzeppelin/contracts": "^4.7.2",

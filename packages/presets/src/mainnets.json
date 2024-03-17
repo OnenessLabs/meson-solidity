@@ -1034,38 +1034,23 @@
   },
   {
     "id": "one",
-    "name": "Harmony",
-    "alias": "ONE",
-    "chainId": "0x63564c40",
-    "slip44": "0x800003ff",
-    "shortSlip44": "0x03ff",
-    "extensions": [
-      "metamask",
-      "walletconnect"
-    ],
-    "addressFormat": "ethers",
-    "url": "",
-    "explorer": "https://explorer.harmony.one",
+    "name": "one",
+    "url": "https://rpc.devnet.onenesslabs.io",
+    "mesonAddress": "0x244Bb9e8D1d1b2B73182D594B87691eD8708105e",
+    "slip44": "0x8000003c",
+    "shortSlip44": "0x003c",
     "nativeCurrency": {
       "name": "ONE",
       "symbol": "ONE",
       "decimals": 18
     },
-    "mesonAddress": "",
     "tokens": [
       {
-        "name": "USD Coin",
-        "symbol": "1USDC",
-        "decimals": 6,
-        "addr": "0x985458E523dB3d53125813eD68c274899e9DfAb4",
-        "tokenIndex": 1
-      },
-      {
-        "name": "Tether USD",
-        "symbol": "1USDT",
-        "decimals": 6,
-        "addr": "0x3C2B8Be99c50593081EAA2A724F0B8285F5aba8f",
-        "tokenIndex": 2
+        "name": "ETH",
+        "symbol": "ETH",
+        "decimals": 18,
+        "addr": "0x0000000000000000000000000000000000000001",
+        "tokenIndex": 255
       }
     ]
   },

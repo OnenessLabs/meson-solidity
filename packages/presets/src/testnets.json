@@ -1,5 +1,41 @@
 [
   {
+    "id": "one",
+    "name": "oneness devnet",
+    "alias": "one",
+    "chainId": "0x1111",
+    "url": "https://rpc.devnet.onenesslabs.io",
+    "mesonAddress": "0x244Bb9e8D1d1b2B73182D594B87691eD8708105e",
+    "slip44": "0x8000003c",
+    "shortSlip44": "0x003c",
+    "addressFormat": "ethers",
+    "extensions": [
+      "metamask",
+      "walletconnect"
+    ],
+    "nativeCurrency": {
+      "name": "ONE",
+      "symbol": "ONE",
+      "decimals": 18
+    },
+    "tokens": [
+      {
+        "name": "USD//C",
+        "symbol": "USDC",
+        "decimals": 6,
+        "addr": "0x431bD39D454ac48957fE384A61afA68A5F4dff59",
+        "tokenIndex": 5
+      },
+      {
+        "name": "ETH",
+        "symbol": "ETH",
+        "decimals": 18,
+        "addr": "0x0000000000000000000000000000000000000001",
+        "tokenIndex": 255
+      }
+    ]
+  },
+  {
     "id": "goerli",
     "name": "Goerli Testnet",
     "alias": "ETH",
@@ -180,28 +216,21 @@
       "walletconnect"
     ],
     "addressFormat": "ethers",
-    "url": "https://goerli-rollup.arbitrum.io/rpc",
+    "url": "https://sepolia-rollup.arbitrum.io/rpc",
     "explorer": "https://goerli-rollup-explorer.arbitrum.io",
     "nativeCurrency": {
       "name": "ETH",
       "symbol": "ETH",
       "decimals": 18
     },
-    "mesonAddress": "0x0d12d15b26a32e72A3330B2ac9016A22b1410CB6",
+    "mesonAddress": "0x244Bb9e8D1d1b2B73182D594B87691eD8708105e",
     "tokens": [
       {
         "name": "USD//C",
         "symbol": "USDC",
         "decimals": 6,
-        "addr": "0x8FB1E3fC51F3b789dED7557E680551d93Ea9d892",
-        "tokenIndex": 1
-      },
-      {
-        "name": "USDT",
-        "symbol": "USDT",
-        "decimals": 6,
-        "addr": "0xB401e876346B3C77DD51781Efba5223d2F1e6697",
-        "tokenIndex": 2
+        "addr": "0x431bD39D454ac48957fE384A61afA68A5F4dff59",
+        "tokenIndex": 5
       },
       {
         "name": "ETH",

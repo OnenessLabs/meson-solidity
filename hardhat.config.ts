@@ -5,6 +5,7 @@ import 'hardhat-change-network'
 import '@openzeppelin/hardhat-upgrades'
 import '@matterlabs/hardhat-zksync-deploy'
 import '@matterlabs/hardhat-zksync-solc'
+import "@nomicfoundation/hardhat-verify"
 import dotenv from 'dotenv'
 import { HardhatPluginError } from 'hardhat/plugins'
 
@@ -121,6 +122,15 @@ task('deploy-forward', 'Deploy ForwardTokenContract')
     const { network } = await _switchNetwork(taskArgs)
     const deployForward = require('./scripts/deploy-forward')
     await deployForward(network)
+  })
+
+task('swap', 'swap for test')
+  .addParam('mainnet', 'Mainnet network id', '')
+  .addParam('testnet', 'Testnet network id', '')
+  .setAction(async taskArgs => {
+    const { network } = await _switchNetwork(taskArgs)
+    const swap = require('./scripts/swap')
+    await swap(network)
   })
 
 export default {
